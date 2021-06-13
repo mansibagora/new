@@ -1,0 +1,264 @@
+  <html>
+    <head>
+        <title>B&S</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/ico" href="https://thumbs.dreamstime.com/b/protection-care-pets-logo-human-hugs-cat-dog-vector-illustration-protection-care-pets-logo-human-163524834.jpg">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <style>
+      .modal-dialog {
+  top: 10vh;
+  right: 5vw;
+}
+            body{ 
+  font-family: Copperplate,Copperplate Gothic Light,fantasy;
+}
+        .cl:hover {
+  width: 110px;
+  height: 120px; 
+  border: 4px solid #f1f1f1;
+}
+.main-text
+{
+    position: absolute;
+    top: 50px;
+    width: 96.66666666666666%;
+    color: #FFF;
+}
+.background {
+  filter: blur(3px);
+}
+
+.example::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+        #loader { 
+            border: 12px solid #f3f3f3; 
+            border-radius: 50%; 
+            border-top: 12px solid #444444; 
+            width: 70px; 
+            height: 70px; 
+            animation: spin 1s linear infinite; 
+        } 
+          
+        @keyframes spin { 
+            100% { 
+                transform: rotate(360deg); 
+            } 
+        } 
+          
+        .center { 
+            position: absolute; 
+            top: 0; 
+            bottom: 0; 
+            left: 0; 
+            right: 0; 
+            margin: auto; 
+        } 
+
+
+    </style>
+    <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+        document.onreadystatechange = function() { 
+            if (document.readyState !== "complete") { 
+                document.querySelector( 
+                  "body").style.visibility = "hidden"; 
+                document.querySelector( 
+                  "#loader").style.visibility = "visible"; 
+            } else { 
+                document.querySelector( 
+                  "#loader").style.display = "none"; 
+                document.querySelector( 
+                  "body").style.visibility = "visible"; 
+            } 
+        }; 
+    </script> 
+    <body>
+
+          <div id="loader" class="center"></div> 
+      <!--Navbar-->
+<nav class="navbar navbar-expand-lg  navbar-light">
+    <img  src="https://thumbs.dreamstime.com/b/protection-care-pets-logo-human-hugs-cat-dog-vector-illustration-protection-care-pets-logo-human-163524834.jpg" style="max-width: 40px">&nbsp&nbsp&nbsp
+  <a class="navbar-brand" href="SecondPage.jsp"><i><b>B&S</b></i></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <a href="#section2" ><button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Login</button></a>&nbsp&nbsp&nbsp&nbsp
+    <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#modalLoginAvatar"><button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Signup</button></a>
+  </div>
+</nav>
+
+<!-- Navbar -->
+            <div style="height: max-content">
+                <!carousel>
+            <div id="carouselExampleControls" class="carousel slide bg-image" data-ride="carousel"style="height: max-content">
+  <div class="carousel-inner background">   
+    <div class="carousel-item active" data-interval="5000">
+        <center><img class="d-block w-100 bg-image" src="images/pet1.jpg" style="height: 400px;max-width: 50%;" /></center>
+        <div class="d-none d-sm-block d-sm-none d-md-block"></div>
+    </div>
+    <div class="carousel-item" data-interval="5000">
+        <center><img class="d-block w-100 bg-image" src="images/pet2.jpg" style="height: 400px;max-width: 50%"/></center>
+        <div class="d-none d-sm-block d-sm-none d-md-block"></div></div>
+      <div class="carousel-item" data-interval="5000">
+          <center><img class="d-block w-100 bg-image" src="images/pet3.jpg" style="height: 400px;max-width: 50%" /></center>
+        <div class="d-none d-sm-block d-sm-none d-md-block">
+        </div></div>
+    </div>
+</div>
+
+
+          <!-- INTRO-->
+        <div style="height: max-content;margin-top: 30px"><center>
+                <img  src="https://thumbs.dreamstime.com/b/protection-care-pets-logo-human-hugs-cat-dog-vector-illustration-protection-care-pets-logo-human-163524834.jpg"  width="90" height="100" style="margin-top: 20px;margin-bottom: 20px" class="cl shadow p-3 mb-5 bg-white rounded">
+                    <h3><i>B&S.com</i></h3>
+                </center></div>
+
+                <!--END INTRO-->
+
+<!-- Login-->
+        <form action ="#" id="section2" method="post">
+          <table align="center"style="width:500px; top: 30%;">
+              <tr>
+                   <td><br>
+                   </td></tr>
+              <tr><td><br><br></td></tr>
+               <tr>
+                   <td><center><input type="email" class="form-control form-control-sm" id="email" name="email" placeholder=" ENTER EMAIL"  style="width: 70%;border-width: 3px" required></center><br></td>
+               </tr>
+               <tr>
+                   <td><center><input type="password" class="form-control form-control-sm" id="pswd" name="pswd" placeholder=" ENTER PASSWORD" style="width: 50%;border-width: 3px" required></center><br></td>
+               </tr>
+               <tr>
+                   <td><center><button class="btn btn-outline-secondary my-2 my-sm-0" type="submit" value="LOGIN" style="border-width: 3px">Login</button></center></td>
+               </tr>               
+               <tr>
+                   <td><hr style="background-color: white"><center><a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#modalLoginAvatar">NOT A USER ?</a></center></td>
+               </tr>
+           </table>
+       </form>
+
+<!-- END LOGIN-->
+                <!-- how it works -->
+            <div style="height: max-content;margin-top: 30px"><center>
+                    <h3>How it works</h3>
+                    <h6>Get started on B&S.com today in 4 simple steps:</h6>
+                <p style="width: 70%;align-content: center"></p>
+  <div class="row" style="margin-top: 30px;margin-bottom: 30px">
+    <div class="col-sm">
+        <h5>Create Your Profile</h5><br> 
+        <img src="images/signup.png" width="90" height="100" class="shadow p-3 mb-5 bg-white rounded"><br>
+        Don't forget to add a your contact number!!!
+    </div>
+      <div class="col-sm">
+        <h5>Save pet of interest</h5><br> 
+        <img src="images/save.png" width="90" height="100" class="shadow p-3 mb-5 bg-white rounded"><br>
+        add pet to cart!!!
+    </div>
+    <div class="col-sm">
+        <h5>Browse Your interest</h5><br>
+        <img src="images/search.png" width="90" height="100" class="shadow p-3 mb-5 bg-white rounded"><br>
+        Search any pet of your interest!!
+    </div>
+    <div class="col-sm">
+        <h5>Buy pet</h5><br>
+        <img src="images/communicate.png" width="90" height="100" class="shadow p-3 mb-5 bg-white rounded"><br>
+        Buy pet Online!!!
+    </div>
+  </div>
+                </center>
+            </div>
+            <!--END how it works -->
+
+    <!--Modal: Login with Avatar Form-->
+<div class="modal fade" id="modalLoginAvatar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+    <!--Content-->
+    <div class="modal-content" style="width: 500px">
+
+      <!--Header-->
+      <div class="modal-header">
+          <img src="images/icon.png" alt="avatar" class="rounded-circle img-responsive" style="margin-left: auto; margin-right: auto;">
+      </div>
+      <!--Body-->
+      <form onsubmit="return checkpswd(this)" action="#" method="post">
+      <div class="modal-body text-center mb-1" >
+
+        <h5 class="mt-1 mb-2"><b><i>B&S</i></b><br>SIGNUP</h5>
+
+        <div class="modal-body mx-3">
+        <div class="md-form mb-3">
+            <input type="text" id="name" name="name" class="form-control validate form-control-sm" placeholder="Your name" required>
+        </div>
+        <div class="md-form mb-3">
+            <input type="email" id="email" name="email" class="form-control validate form-control-sm" placeholder="Your email" required>
+        </div>
+
+        <div class="md-form mb-3">
+            <input type="password" id="pass" name="pass" class="form-control validate form-control-sm" placeholder="Password" required>
+        </div>
+
+          <div class="md-form mb-3">
+              <input type="password" id="cpass" name="cpass" class="form-control validate form-control-sm" placeholder="Confirm Password" required>
+        </div>
+            <div class="md-form mb-3">
+                <input type="text" id="num" name="num" class="form-control validate form-control-sm" placeholder="Your number" required>
+        </div>
+        <div class="text-center mt-4">
+         <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Signup</button>
+        </div>
+      </div>
+    </form>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+</div>
+<!--Modal: Login with Avatar Form-->
+
+
+    </body>
+</html>
+    
